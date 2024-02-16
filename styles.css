@@ -138,6 +138,11 @@ img {
 h1 {
     font-family: montserrat;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 #sticky-footer {
     position: fixed;
     bottom: 0;
