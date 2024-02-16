@@ -125,7 +125,7 @@ img {
     border-radius: 5px;
 }
 
-.filter-button.active {
+.filter-button:active {
     background-color: #007bff;
     color: #fff;
 }
