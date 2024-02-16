@@ -150,7 +150,7 @@ html, body {
 .filter-button:active,
 .filter-button.active {
     /* Add your active styles here */
-    background-color: #007bff; /* Example background color */
+    background-color: #091f73; /* Example background color */
     color: #ffffff; /* Example text color */
     /* Add any other styles to indicate the button is active */
 }
