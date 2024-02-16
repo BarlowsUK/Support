@@ -138,3 +138,12 @@ img {
 h1 {
     font-family: montserrat;
 }
+#sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(248, 249, 250);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    z-index: 1000; /* Ensure footer appears above other content */
+}
