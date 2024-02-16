@@ -110,6 +110,9 @@ img {
         height: 45%;
         margin: 25px !important;
     }
+    button.filter-button {
+    margin-bottom: 10px;
+}
 }
 .filter-buttons {
     margin-bottom: 10px;
