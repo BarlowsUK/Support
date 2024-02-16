@@ -8,17 +8,32 @@
     <link rel="apple-touch-icon" href="icon/barlows-website.png">
 </head>
 <body>
-    <script>
-        var password = "Barlowsfeb";
-        (function passcodeprotect() {
-           var passcode = prompt("Enter Passcode");
-           while (passcode !== password) {
-              alert("Incorrect PassCode");
-              return passcodeprotect();
-           }
-        }());
-        alert('Welcome To Barlows Support!');
-     </script>
+<script>
+    var password = "Barlowsfeb";
+
+    function passcodeprotect() {
+        // Check if the passcode flag is set in sessionStorage
+        if (sessionStorage.getItem('passcodeEntered') === 'true') {
+            return; // If passcode already entered, exit the function
+        }
+
+        var passcode = prompt("Enter Passcode");
+
+        while (passcode !== password) {
+            alert("Incorrect PassCode");
+            passcode = prompt("Enter Passcode"); // Ask again for passcode
+        }
+
+        // Set the passcode flag in sessionStorage
+        sessionStorage.setItem('passcodeEntered', 'true');
+    }
+
+    // Call passcodeprotect function when the page loads
+    passcodeprotect();
+
+    alert('Welcome To Barlows Support!');
+</script>
+
         <div id="content" style="background-color: rgb(248, 249, 250);">
             <div class="logo" style="vertical-align: middle;">
                 <a href="index.html"><img id="logo" src="icon/barlowsuk.png"></a>
