@@ -46,3 +46,19 @@ document.getElementById('clear-filters-button').addEventListener('click', functi
 
 // Add event listener to search input
 document.getElementById("searchbar").addEventListener("keyup", filterLP);
+document.querySelectorAll('.filter-button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        document.querySelectorAll('.filter-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // Add active class to the clicked button
+        this.classList.add('active');
+
+        // Your existing code to handle filtering based on the clicked button
+        let filterValue = this.getAttribute('data-filter').toLowerCase();
+        handleFilterClick(filterValue);
+    });
+});
+
