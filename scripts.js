@@ -46,19 +46,38 @@ document.getElementById('clear-filters-button').addEventListener('click', functi
 
 // Add event listener to search input
 document.getElementById("searchbar").addEventListener("keyup", filterLP);
+
+// Modified event listener for filter buttons
 document.querySelectorAll('.filter-button').forEach(button => {
     button.addEventListener('click', function() {
-        // Remove active class from all buttons
-        document.querySelectorAll('.filter-button').forEach(btn => {
-            btn.classList.remove('active');
-        });
+        let filterValue = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase
+        
+        // Check if the clicked button is the clear filter button
+        if (filterValue !== "clear") {
+            // Remove active class from all buttons
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
 
-        // Add active class to the clicked button
-        this.classList.add('active');
+            // Add active class to the clicked button
+            this.classList.add('active');
+        }
 
-        // Your existing code to handle filtering based on the clicked button
-        let filterValue = this.getAttribute('data-filter').toLowerCase();
         handleFilterClick(filterValue);
     });
 });
+
+// Add event listener to clear filters button
+document.getElementById('clear-filters-button').addEventListener('click', function() {
+    // Remove active class from all buttons
+    document.querySelectorAll('.filter-button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    let x = document.querySelectorAll(".image_container");
+    x.forEach((item) => {
+        item.classList.remove("hidden");
+    });
+});
+
 
