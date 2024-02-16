@@ -24,3 +24,9 @@ document.querySelectorAll('.filter-button').forEach(button => {
         });
     });
 });
+document.getElementById('clear-filters-button').addEventListener('click', function() {
+    let x = document.querySelectorAll(".image_container");
+    x.forEach((item) => {
+        item.classList.remove("hidden");
+    });
+});
