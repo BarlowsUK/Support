@@ -127,11 +127,6 @@ img {
     cursor: pointer;
     border-radius: 5px;
 }
-
-.filter-button:active {
-    background-color: #007bff;
-    color: #fff;
-}
 .title {
     margin-bottom: 10px;
 }
@@ -152,3 +147,11 @@ html, body {
     padding-top: 20px;
     z-index: 1000; /* Ensure footer appears above other content */
 }
+.filter-button:active,
+.filter-button.active {
+    /* Add your active styles here */
+    background-color: #007bff; /* Example background color */
+    color: #ffffff; /* Example text color */
+    /* Add any other styles to indicate the button is active */
+}
+
