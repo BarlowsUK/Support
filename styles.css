@@ -154,4 +154,17 @@ html, body {
     color: #ffffff; /* Example text color */
     /* Add any other styles to indicate the button is active */
 }
+/* Adjust the width of the embedded Facebook posts */
+.facebook-post iframe {
+    max-width: 100%;
+    width: auto !important;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .facebook-post iframe {
+        max-width: 100%;
+        width: 100% !important;
+    }
+}
 
