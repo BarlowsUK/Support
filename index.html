@@ -7,55 +7,33 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" href="icon/barlows-website.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('barlows-website.png'); /* Specify the path to your image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .password-box {
-            background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            margin: 100px auto;
-        }
-    </style>
 </head>
 <body>
-<div class="password-box">
-    <script>
-        var password = "Barlowsfeb";
+  <script>
+    var password = "Barlowsfeb";
 
-        function passcodeprotect() {
-            // Check if the passcode flag is set in localStorage
-            if (localStorage.getItem('passcodeEntered') === 'true') {
-                return; // If passcode already entered, exit the function
-            }
-
-            var passcode = prompt("Enter Passcode");
-
-            while (passcode !== password) {
-                alert("Incorrect PassCode");
-                passcode = prompt("Enter Passcode"); // Ask again for passcode
-            }
-
-            // Set the passcode flag in localStorage
-            localStorage.setItem('passcodeEntered', 'true');
+    function passcodeprotect() {
+        // Check if the passcode flag is set in localStorage
+        if (localStorage.getItem('passcodeEntered') === 'true') {
+            return; // If passcode already entered, exit the function
         }
 
-        // Call passcodeprotect function when the page loads
-        passcodeprotect();
+        var passcode = prompt("Enter Passcode");
 
-        alert('Welcome To Barlows Support!');
-    </script>
-</div>
+        while (passcode !== password) {
+            alert("Incorrect PassCode");
+            passcode = prompt("Enter Passcode"); // Ask again for passcode
+        }
 
+        // Set the passcode flag in localStorage
+        localStorage.setItem('passcodeEntered', 'true');
+    }
+
+    // Call passcodeprotect function when the page loads
+    passcodeprotect();
+
+    alert('Welcome To Barlows Support!');
+</script>
         <div id="content" style="background-color: rgb(248, 249, 250);">
             <div class="logo" style="vertical-align: middle;">
                 <a href="index.html"><img id="logo" src="icon/barlowsuk.png"></a>
