@@ -156,14 +156,14 @@ html, body {
     /* Add any other styles to indicate the button is active */
 }
 /* Adjust the width of the embedded Facebook posts */
-.facebook-post {
+.facebook-post, .linkedin-post {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px; /* Add some margin between posts */
 }
 
-.facebook-post iframe {
+.facebook-post iframe, .linkedin-post iframe {
     width: 100%; /* Make the iframe width 100% of its container */
     max-width: 500px; /* Limit the maximum width of the iframe */
     margin-bottom: 15px; /* Add some margin between posts */
@@ -171,7 +171,7 @@ html, body {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
-    .facebook-post iframe {
+    .facebook-post iframe, linkedin-post iframe {
         max-width: 90%; /* Reduce the maximum width of the iframe for smaller screens */
     }
 }
