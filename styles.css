@@ -156,7 +156,7 @@ html, body {
     /* Add any other styles to indicate the button is active */
 }
 /* Adjust the width of the embedded Facebook posts */
-.facebook-post, .linkedin-post, .post_container {
+.facebook-post, .linkedin-post {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,6 +180,9 @@ html, body {
     .linkedin-post iframe {
         max-width: 90%; /* Reduce the maximum width of the iframe for smaller screens */
     }
+}
+.post_container {
+    width: 100%;
 }
 
 
