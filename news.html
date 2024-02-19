@@ -59,6 +59,25 @@
             });
         });
     });
+    // Modified event listener for filter buttons
+document.querySelectorAll('.filter-button').forEach(button => {
+    button.addEventListener('click', function() {
+        let filterValue = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase
+        
+        // Check if the clicked button is the clear filter button
+        if (filterValue !== "clear") {
+            // Remove active class from all buttons
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to the clicked button
+            this.classList.add('active');
+        }
+
+        handleFilterClick(filterValue);
+    });
+});
 </script>
 </body>
     <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
