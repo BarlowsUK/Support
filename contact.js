@@ -11,9 +11,6 @@ function filterLP(evt) {
         }
     });
 }
-
-let currentFilter = "barlows"; // Variable to store the currently active filter
-
 // Function to filter post containers based on filter value
 function filterPostContainers(filterValue) {
     let x = document.querySelectorAll(".post_container");
@@ -43,10 +40,6 @@ document.querySelectorAll('.filter-button').forEach(button => {
     });
 });
 
-// Add event listener to clear filters button
-document.getElementById('clear-filters-button').addEventListener('click', function() {
-    handleFilterClick("barlows"); // Revert to default "barlows" filter
-});
 
 // Function to filter post containers based on search input
 function filterPostContainersBySearch(input) {
