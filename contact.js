@@ -13,7 +13,7 @@ function filterLP(evt) {
 document.querySelectorAll('.filter-button').forEach(button => {
     button.addEventListener('click', function() {
         let filterValue = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase
-        let x = document.querySelectorAll(".image_container");
+        let x = document.querySelectorAll(".facebook-post");
         x.forEach((item) => {
             let id = item.id.toLowerCase(); // Get the id attribute
             if (id.includes(filterValue)) { // Check if id contains the filter value
