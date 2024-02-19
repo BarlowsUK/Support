@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.filter-button').forEach(button => {
         button.addEventListener('click', function() {
             let filterValue = this.getAttribute('data-filter').toLowerCase();
-            let x = document.querySelectorAll(".facebook-post");
+            let x = document.querySelectorAll(".post-container");
             x.forEach((item) => {
                 let id = item.id.toLowerCase();
                 if (id.includes(filterValue)) {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('clear-filters-button').addEventListener('click', function() {
-        let x = document.querySelectorAll(".facebook-post");
+        let x = document.querySelectorAll(".post-container");
         x.forEach((item) => {
             item.classList.remove("hidden");
         });
