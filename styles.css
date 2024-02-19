@@ -171,7 +171,13 @@ html, body {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
-    .facebook-post iframe, linkedin-post iframe {
+    .facebook-post iframe {
+        max-width: 90%; /* Reduce the maximum width of the iframe for smaller screens */
+    }
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .linkedin-post iframe {
         max-width: 90%; /* Reduce the maximum width of the iframe for smaller screens */
     }
 }
