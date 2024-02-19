@@ -37,7 +37,7 @@
 </div>
     
     <script src="contact.js"></script>
-    <script>
+<script>
     document.addEventListener('DOMContentLoaded', function () {
         const filterButtons = document.querySelectorAll('.filter-button');
         const postContainers = document.querySelectorAll('.post_container');
@@ -47,9 +47,9 @@
                 const filter = button.getAttribute('data-filter');
                 postContainers.forEach(container => {
                     if (container.getAttribute('data-filter') === filter || filter === 'all') {
-                        container.style.display = 'block';
+                        container.classList.remove('hidden');
                     } else {
-                        container.style.display = 'none';
+                        container.classList.add('hidden');
                     }
                 });
             });
@@ -57,12 +57,11 @@
 
         document.getElementById('clear-filters-button').addEventListener('click', () => {
             postContainers.forEach(container => {
-                container.style.display = 'block';
+                container.classList.remove('hidden');
             });
         });
     });
 </script>
-
 </body>
     <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
         <div class="container text-center">
