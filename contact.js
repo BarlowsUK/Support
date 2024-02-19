@@ -25,7 +25,7 @@ document.querySelectorAll('.filter-button').forEach(button => {
     });
 });
 document.getElementById('clear-filters-button').addEventListener('click', function() {
-    let x = document.querySelectorAll(".image_container");
+    let x = document.querySelectorAll(".facebook-post");
     x.forEach((item) => {
         item.classList.remove("hidden");
     });
