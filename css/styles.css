@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: montserrat;
 }
 .search-box {
     margin: 50px auto;
@@ -188,3 +188,38 @@ html, body {
     align-items: center;
     margin-bottom: 20px;
 }
+ h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 20px;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd; /* Add border to separate contacts */
+        padding-bottom: 10px; /* Add some space between contacts */
+    }
+    .name,
+    .number,
+    .email {
+        flex-basis: 30%;
+    }
+    .number,
+    .email {
+        text-align: center;
+    }
+    .number a,
+    .email a {
+        color: blue;
+        text-decoration: none;
+    }
+    .number a:hover,
+    .email a:hover {
+        text-decoration: underline;
+    }
