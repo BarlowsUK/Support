@@ -53,11 +53,18 @@
             });
         });
 
-        document.getElementById('clear-filters-button').addEventListener('click', () => {
-            postContainers.forEach(container => {
-                container.classList.remove('hidden');
-            });
-        });
+document.getElementById('clear-filters-button').addEventListener('click', () => {
+    // Remove active class from all filter buttons
+    document.querySelectorAll('.filter-button').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Clear filters
+    postContainers.forEach(container => {
+        container.classList.remove('hidden');
+    });
+});
+
     });
     // Modified event listener for filter buttons
 document.querySelectorAll('.filter-button').forEach(button => {
