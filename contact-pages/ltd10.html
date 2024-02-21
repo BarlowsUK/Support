@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ltd 10 Contact Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" href="../icon/barlows-website.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="content" style="background-color: rgb(248, 249, 250);">
+            <div class="logo" style="vertical-align: middle;">
+                <a href="index.html"><img id="logo" src="../icon/barlowsuk.png"></a>
+            </div>
+            </div>
+        <div class="search-box">
+                        <div class="title" style="margin-bottom: 10px;">
+                <h1>Ltd 10 Contact Details</h1>
+            </div>
+                <div class="filter-buttons">
+    <a class="filter-button" href="../contact.html">Back</a>
+  </div>
+            <form>
+                <input type="text" placeholder="Search" id="searchbar" onkeyup="filterLP(event)"/>
+            </form>
+        </div>
+       <div class="container">
+    <ul>
+        <li class="contact" id="office">
+            <span class="name">Office</span>
+            <span class="number"><a href="tel:01948 820200">phone</a></span>
+            <span class="email"><a href="mailto:whitegoods@barlowsuk.co.uk">email</a></span>
+        </li>
+        <li class="contact" id="andy moore">
+            <span class="name">Andy Moore</span>
+            <span class="number"><a href="tel:07740 596028">mobile</a></span>
+            <span class="email"><a href="mailto:andy.moore@barlowsuk.co.uk">email</a></span>
+        </li>
+        <!-- Add more contacts as needed -->
+    </ul>
+</div>
+<script>
+        // Function to filter contact list by ID
+    function filterLP(evt) {
+        let input = evt.target.value.toLowerCase();
+        let contacts = document.querySelectorAll(".contact");
+        contacts.forEach((contact) => {
+            let id = contact.id.toLowerCase();
+            if (!id.includes(input)) {
+                contact.classList.add("hidden"); // Add hidden class to hide the entire contact row
+            } else {
+                contact.classList.remove("hidden"); // Remove hidden class to display the contact row
+            }
+        });
+    }
+
+    // Add event listener to the search input
+    document.getElementById("searchInput").addEventListener("input", filterLP);
+</script>
+</body>
+     <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
+    <div class="container text-center">
+      <small style="font-family: montserrat;">Built for. www.barlowsuk.co.uk</small>
+    </div>
+  </footer>
+</html>
