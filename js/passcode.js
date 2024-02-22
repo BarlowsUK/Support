@@ -3,7 +3,8 @@ var password = "Barlowsfeb";
 function passcodeprotect() {
     // Check if the passcode flag is set in localStorage
     if (localStorage.getItem('passcodeEntered') === 'true') {
-        return; // If passcode already entered, exit the function
+        // Passcode already entered, no need to ask again
+        return;
     }
 
     var passcode = prompt("Enter Passcode");
@@ -16,9 +17,11 @@ function passcodeprotect() {
     // Set the passcode flag in localStorage
     localStorage.setItem('passcodeEntered', 'true');
 
-    // Show the welcome message
+    // If passcode is entered correctly for the first time, show the welcome message
     alert('Welcome To Barlows Support!');
 }
 
-// Call passcodeprotect function when the page loads
-passcodeprotect();
+// Call passcodeprotect function only when the page loads for the first time
+if (!localStorage.getItem('passcodeEntered')) {
+    passcodeprotect();
+}
