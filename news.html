@@ -36,57 +36,6 @@
         <div class="facebook-post" data-filter="linkedin"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7133785025040257025" width="500" height="567" style="border:none" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
     
     <script src="js/alt.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const filterButtons = document.querySelectorAll('.filter-button');
-        const postContainers = document.querySelectorAll('.facebook-post');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-filter');
-                postContainers.forEach(container => {
-                    if (container.getAttribute('data-filter') === filter || filter === 'all') {
-                        container.classList.remove('hidden');
-                    } else {
-                        container.classList.add('hidden');
-                    }
-                });
-            });
-        });
-
-document.getElementById('clear-filters-button').addEventListener('click', () => {
-    // Remove active class from all filter buttons
-    document.querySelectorAll('.filter-button').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // Clear filters
-    postContainers.forEach(container => {
-        container.classList.remove('hidden');
-    });
-});
-
-    });
-    // Modified event listener for filter buttons
-document.querySelectorAll('.filter-button').forEach(button => {
-    button.addEventListener('click', function() {
-        let filterValue = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase
-        
-        // Check if the clicked button is the clear filter button
-        if (filterValue !== "clear") {
-            // Remove active class from all buttons
-            document.querySelectorAll('.filter-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Add active class to the clicked button
-            this.classList.add('active');
-        }
-
-        handleFilterClick(filterValue);
-    });
-});
-</script>
 </body>
     <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
         <div class="container text-center">
