@@ -260,3 +260,14 @@ ul {
 .number a:hover {
     text-decoration: underline;
 }
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback textarea {
+    display: block;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.feedback {
+    text-align: center;
+}
+
