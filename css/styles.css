@@ -264,7 +264,7 @@ ul {
 .feedback input[type="email"],
 .feedback textarea {
     display: block;
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 0 auto 10px; /* Adjust as needed */
 }
 
 .feedback {
