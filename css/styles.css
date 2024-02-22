@@ -212,6 +212,10 @@ li {
     padding-bottom: 10px; /* Add some space between contacts */
     flex-direction: column; /* Aligns contacts to center */
 }
+.main-contact:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
 
 .number {
     text-align: center;
