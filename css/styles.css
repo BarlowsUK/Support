@@ -27,6 +27,14 @@ body {
     outline: none;
     font-size: 18px;
 }
+.search-box textarea {
+    width: 500px;
+    padding: 0 16px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    outline: none;
+    font-size: 18px;
+}
 .search-box input[type="submit"] {
     margin-left: 10px;
     width: auto;
