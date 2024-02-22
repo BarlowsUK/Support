@@ -114,6 +114,11 @@ img {
         width: 80%; /* Adjust width for better responsiveness */
         max-width: 500px; /* Set max-width to prevent excessive stretching */
     }
+
+    .search-box input[type="email"] {
+    width: 80%; /* Adjust width for better responsiveness */
+    max-width: 500px; /* Set max-width to prevent excessive stretching */
+    }
     
     #container .image_container {
         width: 25%; /* Adjust width for better responsiveness */
