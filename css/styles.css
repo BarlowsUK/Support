@@ -193,16 +193,13 @@ ul {
     padding: 0;
 }
 
-li {
-    margin-bottom: 20px;
-}
-
 .contact {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Horizontally center items */
     border-bottom: 1px solid #ddd; /* Add border to separate contacts */
     padding-bottom: 10px; /* Add some space between contacts */
+    padding-top: 10px;
 }
 .main-contact {
     display: flex;
@@ -210,6 +207,7 @@ li {
     align-items: center; /* Horizontally center items */
     border-bottom: 1px solid #ddd; /* Add border to separate contacts */
     padding-bottom: 10px; /* Add some space between contacts */
+    padding-top: 10px;
     flex-direction: column; /* Aligns contacts to center */
 }
 .main-contact:nth-child(even) {
