@@ -260,4 +260,16 @@ ul {
 .number a:hover {
     text-decoration: underline;
 }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+  }
+  input,
+  textarea,
+  button {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
 
