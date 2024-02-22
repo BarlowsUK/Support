@@ -15,3 +15,52 @@ function filterLP(evt) {
 document.getElementById("searchbar").addEventListener("keyup", function(evt) {
     filterPostContainersBySearch(evt.target);
 });
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const postContainers = document.querySelectorAll('.facebook-post');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                postContainers.forEach(container => {
+                    if (container.getAttribute('data-filter') === filter || filter === 'all') {
+                        container.classList.remove('hidden');
+                    } else {
+                        container.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+document.getElementById('clear-filters-button').addEventListener('click', () => {
+    // Remove active class from all filter buttons
+    document.querySelectorAll('.filter-button').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Clear filters
+    postContainers.forEach(container => {
+        container.classList.remove('hidden');
+    });
+});
+
+    });
+    // Modified event listener for filter buttons
+document.querySelectorAll('.filter-button').forEach(button => {
+    button.addEventListener('click', function() {
+        let filterValue = this.getAttribute('data-filter').toLowerCase(); // Convert to lowercase
+        
+        // Check if the clicked button is the clear filter button
+        if (filterValue !== "clear") {
+            // Remove active class from all buttons
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to the clicked button
+            this.classList.add('active');
+        }
+
+        handleFilterClick(filterValue);
+    });
+});
