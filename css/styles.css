@@ -271,4 +271,7 @@ ul {
 .feedback {
     text-align: center;
 }
+.feedback button[type="submit"] {
+    margin-bottom: 50px !important;
+}
 
