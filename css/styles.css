@@ -87,8 +87,8 @@ body {
 }
 #container .image_container {
     position: relative;
-    width: 250px; /* Set your preferred width */
-    height: 250px; /* Set your preferred height */
+    width: 100px; /* Set your preferred width */
+    height: 100px; /* Set your preferred height */
     margin: 10px;
 }
 
@@ -106,7 +106,6 @@ img {
     width: 100px;
 }
 .image_container {
-    margin: 100px !important;
     margin-bottom: 0px !important;
 }
 .hidden {
