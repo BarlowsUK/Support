@@ -226,8 +226,7 @@ ul {
     justify-content: space-between;
     align-items: center; /* Horizontally center items */
     border-bottom: 1px solid #ddd; /* Add border to separate contacts */
-    padding-bottom: 10px; /* Add some space between contacts */
-    padding-top: 10px;
+    padding: 10px 25px 10px 25px; /* Add padding around contact list */
 }
 .contact:nth-child(even) {
     background-color: #f2f2f2; /* Light grey background for even rows */
