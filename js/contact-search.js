@@ -35,7 +35,7 @@
 // Function to filter contact list by accordion
     function filterLP(evt) {
         let input = evt.target.value.toLowerCase();
-        let contacts = document.querySelectorAll(".accordion-item");
+        let contacts = document.querySelectorAll(".buk-accordion-item");
         contacts.forEach((contact) => {
             let id = contact.id.toLowerCase();
             if (!id.includes(input)) {
