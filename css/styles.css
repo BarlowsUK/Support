@@ -287,12 +287,12 @@ button.sendit {
     margin-top: 10px;
 }
 .accordion {
-  border: 1px solid #ccc;
   margin: 20px;
 }
 
 .accordion-item {
   border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .accordion-header {
