@@ -280,33 +280,28 @@ button.sendit {
     margin-bottom: 209px;
     margin-top: 10px;
 }
-.infoContent {
-    display: none; /* Hide the content by default */
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin-top: 10px;
-}
-.accordion {
+
+.buk-accordion {
   margin: 20px;
 }
 
-.accordion-item {
+.buk-accordion-item {
   border: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
-.accordion-header {
+.buk-accordion-header {
   background-color: #f4f4f4;
   padding: 10px;
   cursor: pointer;
 }
 
-.accordion-content {
+.buk-accordion-content {
   padding: 10px;
   display: none;
 }
 /* Style for active accordion header */
-.accordion-item.active .accordion-header {
+.buk-accordion-item.active .buk-accordion-header {
   background-color: #091f73; /* Change to your desired color */
   color: #fff;
 }
