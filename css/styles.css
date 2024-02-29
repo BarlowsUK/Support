@@ -318,3 +318,7 @@ li.tbt {
 .bold-text {
     font-weight: bold;
 }
+.a-awareness-container {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
