@@ -117,25 +117,37 @@
 </div>
 </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const accordionItems = document.querySelectorAll('.buk-accordion-item');
 
   accordionItems.forEach(item => {
     item.addEventListener('click', function() {
-      // Close all accordion items
-      accordionItems.forEach(item => {
-        item.classList.remove('active');
-        const panel = item.querySelector('.buk-accordion-content');
-        panel.style.display = 'none';
-      });
+      const isActive = this.classList.contains('active');
 
-      // Open the clicked accordion item
-      this.classList.add('active');
-      const panel = this.querySelector('.buk-accordion-content');
-      panel.style.display = 'block';
+      // Close all accordion items if the clicked item is already active
+      if (isActive) {
+        accordionItems.forEach(item => {
+          item.classList.remove('active');
+          const panel = item.querySelector('.buk-accordion-content');
+          panel.style.display = 'none';
+        });
+      } else {
+        // Close all accordion items
+        accordionItems.forEach(item => {
+          item.classList.remove('active');
+          const panel = item.querySelector('.buk-accordion-content');
+          panel.style.display = 'none';
+        });
+
+        // Open the clicked accordion item
+        this.classList.add('active');
+        const panel = this.querySelector('.buk-accordion-content');
+        panel.style.display = 'block';
+      }
     });
   });
 });
+
     </script>
 </body>
      <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
