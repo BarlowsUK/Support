@@ -305,3 +305,8 @@ button.sendit {
   padding: 10px;
   display: none;
 }
+/* Style for active accordion header */
+.accordion-item.active .accordion-header {
+  background-color: #091f73; /* Change to your desired color */
+  color: #fff;
+}
