@@ -118,20 +118,20 @@
 </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-  const accordionItems = document.querySelectorAll('.accordion-item');
+  const accordionItems = document.querySelectorAll('.buk-accordion-item');
 
   accordionItems.forEach(item => {
     item.addEventListener('click', function() {
       // Close all accordion items
       accordionItems.forEach(item => {
         item.classList.remove('active');
-        const panel = item.querySelector('.accordion-content');
+        const panel = item.querySelector('.buk-accordion-content');
         panel.style.display = 'none';
       });
 
       // Open the clicked accordion item
       this.classList.add('active');
-      const panel = this.querySelector('.accordion-content');
+      const panel = this.querySelector('.buk-accordion-content');
       panel.style.display = 'block';
     });
   });
