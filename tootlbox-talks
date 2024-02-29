@@ -30,9 +30,7 @@
        <div class="container">
     <ul>
         <li class="contact" id="office">
-            <span class="name">Office</span>
-            <span class="number"><a href="tel:01948 820200">phone</a></span>
-            <span class="email"><a href="mailto:enquiries@barlowsuk.co.uk">email</a></span>
+            <span class="number"><a href="docs/asbestos-essentials/a0- Introduction to asbestos essentials.pdf">Introduction to Asbestos Essentials</a></span>
         </li>
         <li class="contact" id="mark done">
             <span class="name">Mark Done</span>
