@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Details</title>
+    <title>Ltd 1 Contact Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="apple-touch-icon" href="icon/barlows-website.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="apple-touch-icon" href="../icon/barlows-website.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/passcode.js"></script>
-    <script src="js/alt.js"></script>
+    <script src="../js/passcode.js"></script>
+    <script src="../js/contact-search.js"></script>
 </head>
 <body>
         <div id="content" style="background-color: rgb(248, 249, 250);">
             <div class="logo" style="vertical-align: middle;">
-                <a href="index.html"><img id="logo" src="icon/barlowsuk.png"></a>
+                <a href="index.html"><img id="logo" src="../icon/barlowsuk.png"></a>
             </div>
             </div>
         <div class="search-box">
                         <div class="title" style="margin-bottom: 10px;">
-                <h1>Contact Details</h1>
+                <h1>Ltd 1 Contact Details</h1>
             </div>
                 <div class="filter-buttons">
-    <a class="filter-button" href="index.html">Back</a>
+    <a class="filter-button" href="../contact.html">Back</a>
   </div>
             <form>
                 <input type="text" placeholder="Search" id="searchbar" onkeyup="filterLP(event)"/>
@@ -29,77 +29,50 @@
         </div>
        <div class="container">
     <ul>
-        <li class="main-contact" id="1">
-            <span class="number"><a href="contact-pages/ltd1.html">Ltd 1</a></span>
+        <li class="contact" id="office">
+            <span class="name">Office</span>
+            <span class="number"><a href="tel:01948 820200">phone</a></span>
+            <span class="email"><a href="mailto:enquiries@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="2">
-            <span class="number"><a href="contact-pages/ltd2.html">Ltd 2</a></span>
+        <li class="contact" id="mark done">
+            <span class="name">Mark Done</span>
+            <span class="number"><a href="tel:07742 100130">mobile</a></span>
+            <span class="email"><a href="mailto:markd@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="3">
-            <span class="number"><a href="contact-pages/ltd3.html">Ltd 3</a></span>
+        <li class="contact" id="rich hamer">
+            <span class="name">Rich Hamer</span>
+            <span class="number"><a href="tel:07739 708533">mobile</a></span>
+            <span class="email"><a href="mailto:richard.hamer@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="4a">
-            <span class="number"><a href="contact-pages/ltd4a.html">Ltd 4a</a></span>
+        <li class="contact" id="nick webb">
+            <span class="name">Nick Webb</span>
+            <span class="number"><a href="tel:07792 171061">mobile</a></span>
+            <span class="email"><a href="mailto:nick.webb@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="5">
-            <span class="number"><a href="contact-pages/ltd5.html">Ltd 5</a></span>
+        <li class="contact" id="dan sullivan">
+            <span class="name">Dan Sullivan</span>
+            <span class="number"><a href="tel:07709 410856">mobile</a></span>
+            <span class="email"><a href="mailto:dan.sullivan@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="7a">
-            <span class="number"><a href="contact-pages/ltd7a.html">Ltd 7a</a></span>
+        <li class="contact" id="clive france">
+            <span class="name">Clive France</span>
+            <span class="number"><a href="tel:07740 596003">mobile</a></span>
+            <span class="email"><a href="mailto:clive.france@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="7b">
-            <span class="number"><a href="contact-pages/ltd7b.html">Ltd 7b</a></span>
+        <li class="contact" id="mike jones">
+            <span class="name">Mike Jones</span>
+            <span class="number"><a href="tel:07740 596016">mobile</a></span>
+            <span class="email"><a href="mailto:mike.jones@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="7c">
-            <span class="number"><a href="contact-pages/ltd7c.html">Ltd 7c</a></span>
+        <li class="contact" id="luke ellis">
+            <span class="name">Luke Ellis</span>
+            <span class="number"><a href="tel:">mobile</a></span>
+            <span class="email"><a href="mailto:luke.ellis@barlowsuk.co.uk">email</a></span>
         </li>
-        <li class="main-contact" id="8">
-            <span class="number"><a href="contact-pages/ltd8.html">Ltd 8</a></span>
-        </li>
-        <li class="main-contact" id="8a">
-            <span class="number"><a href="contact-pages/ltd8a.html">Ltd 8a</a></span>
-        </li>
-        <li class="main-contact" id="9a">
-            <span class="number"><a href="contact-pages/ltd9a.html">Ltd 9a</a></span>
-        </li>
-        <li class="main-contact" id="9b">
-            <span class="number"><a href="contact-pages/ltd9b.html">Ltd 9b</a></span>
-        </li>
-        <li class="main-contact" id="9c">
-            <span class="number"><a href="contact-pages/ltd9c.html">Ltd 9c</a></span>
-        </li>
-        <li class="main-contact" id="9d">
-            <span class="number"><a href="contact-pages/ltd9d.html">Ltd 9d</a></span>
-        </li>
-        <li class="main-contact" id="9e">
-            <span class="number"><a href="contact-pages/ltd9e.html">Ltd 9e</a></span>
-        </li>
-        <li class="main-contact" id="9f">
-            <span class="number"><a href="contact-pages/ltd9f.html">Ltd 9f</a></span>
-        </li>
-        <li class="main-contact" id="10">
-            <span class="number"><a href="contact-pages/ltd10.html">Ltd 10</a></span>
-        </li>
-        <li class="main-contact" id="12">
-            <span class="number"><a href="contact-pages/ltd12.html">Ltd 12</a></span>
-        </li>
-        <li class="main-contact" id="14">
-            <span class="number"><a href="contact-pages/ltd14.html">Ltd 14</a></span>
-        </li>
-        <li class="main-contact" id="14t">
-            <span class="number"><a href="contact-pages/ltd14t.html">Ltd 14t</a></span>
-        </li>
-        <li class="main-contact" id="15">
-            <span class="number"><a href="contact-pages/ltd15.html">Ltd 15</a></span>
-        </li>
-        <li class="main-contact" id="15t">
-            <span class="number"><a href="contact-pages/ltd15t.html">Ltd 15t</a></span>
-        </li>
-        <li class="main-contact" id="support fleet HR payroll accounts">
-            <span class="number"><a href="contact-pages/support.html">Support</a></span>
-        </li>
-        <li class="main-contact" id="bes">
-            <span class="number"><a href="contact-pages/bes.html">BES</a></span>
+        <li class="contact" id="nat jones">
+            <span class="name">Nat Jones</span>
+            <span class="number"><a href="tel:">mobile</a></span>
+            <span class="email"><a href="mailto:nat.jones@barlowsuk.co.uk">email</a></span>
         </li>
         <!-- Add more contacts as needed -->
     </ul>
