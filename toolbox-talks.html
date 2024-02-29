@@ -79,29 +79,6 @@
         <!-- Add more contacts as needed -->
     </ul>
 </div>
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all links with the class "asbestosLink"
-    var links = document.querySelectorAll(".asbestosLink");
-
-    // Add click event listeners to each link
-    links.forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent the default behavior of the link
-
-            // Get the next sibling element with the class "infoContent"
-            var content = this.nextElementSibling;
-
-            // Toggle the display of the content
-            if (content.style.display === "block") {
-                content.style.display = "none"; // Hide the content
-            } else {
-                content.style.display = "block"; // Show the content
-            }
-        });
-    });
-});
-</script>
 </body>
      <footer id="sticky-footer" class="flex-shrink-0" style="background-color: rgb(248, 249, 250); margin-top: 25px; padding-bottom: 20px; padding-top: 20px;">
     <div class="container text-center">
