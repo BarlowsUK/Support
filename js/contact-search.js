@@ -52,7 +52,7 @@
 // Function to filter contact list by clients
     function filterLP(evt) {
         let input = evt.target.value.toLowerCase();
-        let contacts = document.querySelectorAll(".image-container");
+        let contacts = document.querySelectorAll(".image_container");
         contacts.forEach((contact) => {
             let id = contact.id.toLowerCase();
             if (!id.includes(input)) {
