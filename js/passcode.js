@@ -1,4 +1,4 @@
-var password = "Barlowsfeb";
+var password = "Barlowsmar";
 var localStorageKey = 'passcodeEntered';
 var expirationDurationMinutes = 60; // Adjust the duration as needed
 
