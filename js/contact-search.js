@@ -65,3 +65,4 @@
 
     // Add event listener to the search input
     document.getElementById("searchInput").addEventListener("input", filterLP);
+
